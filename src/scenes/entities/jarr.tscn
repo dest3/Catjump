@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2t07ppdp2r7q"]
+
+[ext_resource type="Texture2D" uid="uid://0luhodod0x84" path="res://assets/sprites/potteries.png" id="1_k30qm"]
+[ext_resource type="Script" uid="uid://c4qxubpk5gb7c" path="res://src/scripts/entities/jarr.gd" id="1_qu58b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qu58b"]
+size = Vector2(10, 44)
+
+[node name="Jarr" type="Area2D"]
+script = ExtResource("1_qu58b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_k30qm")
+region_enabled = true
+region_rect = Rect2(7.2092, 0, 34.4964, 47.3769)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_qu58b")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

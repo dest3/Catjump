@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dt84r8oc8jgnl"
+path="res://.godot/imported/28 - Yadu Rajiv - First Steps.ogg-4defe3d1e076d76a5a71ac736b7acd89.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/28 - Yadu Rajiv - First Steps.ogg"
+dest_files=["res://.godot/imported/28 - Yadu Rajiv - First Steps.ogg-4defe3d1e076d76a5a71ac736b7acd89.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

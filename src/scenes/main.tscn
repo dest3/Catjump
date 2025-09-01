@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://c1vk8sbswdrn1"]
+
+[ext_resource type="PackedScene" uid="uid://xtla1skwnpef" path="res://src/scenes/UI/main_menu.tscn" id="1_kkvs4"]
+[ext_resource type="Script" uid="uid://b335ilx708wio" path="res://src/scripts/main.gd" id="1_rr2wm"]
+[ext_resource type="Script" uid="uid://5qkvcon4j4l1" path="res://src/scripts/classes/LevelData.gd" id="2_32aa5"]
+
+[sub_resource type="Resource" id="Resource_5dlwx"]
+script = ExtResource("2_32aa5")
+level_id = 1
+level_name = "test"
+level_completed = false
+level_unlocked = false
+level_path = "levels/level_01"
+metadata/_custom_type_script = "uid://5qkvcon4j4l1"
+
+[sub_resource type="Resource" id="Resource_32aa5"]
+script = ExtResource("2_32aa5")
+level_id = 2
+level_name = "Biblioteca"
+level_completed = false
+level_unlocked = false
+level_path = "levels/level_02"
+metadata/_custom_type_script = "uid://5qkvcon4j4l1"
+
+[node name="Main" type="Node"]
+script = ExtResource("1_rr2wm")
+levels_available = Array[ExtResource("2_32aa5")]([SubResource("Resource_5dlwx"), SubResource("Resource_32aa5")])
+
+[node name="UIMain" type="CanvasLayer" parent="."]
+
+[node name="MainMenu" parent="UIMain" instance=ExtResource("1_kkvs4")]
+
+[node name="2dScene" type="Node2D" parent="."]
