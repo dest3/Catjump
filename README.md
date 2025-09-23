@@ -1,4 +1,4 @@
-# 🐾 Michis Jump
+# Michis Jump
 
 **Michis Jump** es un juego arcade en el que el jugador controla a un gato que explora su propio mundo onírico.  
 Cada vez que se duerme, el gatito sueña con escenarios alocados inspirados en las habitaciones de su casa:  
@@ -10,16 +10,16 @@ donde los juguetes se distorsionan y el sueño se transforma en una pesadilla.
 
 ---
 
-## 📌 Características principales
+## Características principales
 - Estilo arcade vertical con **ascenso infinito**.
 - Mecánica simple de **saltar, esquivar y recolectar**.
-- Escenarios inspirados en la vida cotidiana de un gato 🐱.
+- Escenarios inspirados en la vida cotidiana de un gato.
 - Evolución del tono visual y sonoro: de lo lúdico a lo inquietante.
 - Inspiración estética en el **Uncanny Valley** para los niveles avanzados.
 
 ---
 
-## 🎮 Controles
+## Controles
 - **Movimiento**: `←` y `→`  
 - **Saltar**: `Espacio`  
 - **Pausa**: `Esc`
