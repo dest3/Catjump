@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://cdohce2co26an"]
+[gd_scene load_steps=17 format=4 uid="uid://cdohce2co26an"]
 
 [ext_resource type="Script" uid="uid://baicm23segpik" path="res://src/scripts/classes/Level.gd" id="1_x0dkw"]
 [ext_resource type="Texture2D" uid="uid://0bsgkky3vcbn" path="res://assets/tiles/Paredes.png" id="2_41btt"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bvtcj7vl5ul6x" path="res://assets/tiles/Frames.png" id="5_wxy1o"]
 [ext_resource type="PackedScene" uid="uid://c2t07ppdp2r7q" path="res://src/scenes/entities/jarr.tscn" id="7_wxy1o"]
 [ext_resource type="AudioStream" uid="uid://dxjteli6vmkrw" path="res://assets/sounds/music/Yadu Rajiv - miniloops-1 - 20 - Groovy Drive.ogg" id="8_4srhd"]
+[ext_resource type="PackedScene" uid="uid://cetx8ugymk81j" path="res://src/scenes/entities/enemy.tscn" id="9_a1u7t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4srhd"]
 texture = ExtResource("2_41btt")
@@ -177,6 +178,7 @@ sources/0 = SubResource("TileSetAtlasSource_a1u7t")
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_x0dkw")
+level_id = 4
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 
@@ -238,3 +240,6 @@ position = Vector2(1022, -114)
 stream = ExtResource("8_4srhd")
 autoplay = true
 parameters/looping = true
+
+[node name="Enemy" parent="." instance=ExtResource("9_a1u7t")]
+position = Vector2(704, 172)

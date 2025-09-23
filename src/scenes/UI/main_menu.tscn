@@ -86,7 +86,8 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 theme_override_fonts/font = SubResource("SystemFont_5s5fa")
 theme_override_font_sizes/font_size = 30
-text = "Comenzar"
+text = "New Game
+"
 
 [node name="NivelesBt" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(250, 0)
@@ -95,7 +96,8 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 theme_override_fonts/font = SubResource("SystemFont_hdk6i")
 theme_override_font_sizes/font_size = 30
-text = "Niveles"
+text = "leader board
+"
 
 [node name="SalirBt" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(250, 0)
